@@ -1,11 +1,11 @@
 # app/routers/tracking.py
 from fastapi import APIRouter, status
-from app.database.state import state
-from app.routers.map_ws import manager
+# from database import state
+# from routers.map_ws import manager
 
 # Import schemas for both entities
-from app.schemas.orders import OrderCreate
-from app.schemas.riders import RiderLocationUpdate
+from schemas import OrderCreate
+from schemas import RiderLocationUpdate
 
 # We use a broader prefix like /api since this router handles multiple resources
 router = APIRouter(prefix="/api", tags=["Logistics Tracking"])
