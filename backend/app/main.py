@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-# from app.routers import orders, riders, map_ws
+from app.routers import tracking, map_ws
 
 app = FastAPI(
     title="Logistics Hyper-Routing Engine Backend",
@@ -18,9 +18,8 @@ app.add_middleware(
 )
 
 # Include Modular Sub-routers
-# app.include_router(orders.router)
-# app.include_router(riders.router)
-# app.include_router(map_ws.router)
+app.include_router(tracking.router)
+app.include_router(map_ws.router)
 
 @app.get("/")
 async def root_health_check():
