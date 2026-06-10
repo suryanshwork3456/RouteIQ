@@ -33,7 +33,7 @@ function Sidebar({
             }}>
               <Truck size={18} color="#fff" />
             </div>
-            <span style={{ fontSize: 18, fontWeight: 800, color: "#f97316", letterSpacing: -0.5 }}>RouteIQ</span>
+            <span style={{ fontSize: 18, fontWeight: 800, color: "#f97316", letterSpacing: -0.5 }}>LogiFlow</span>
           </div>
           <button onClick={() => setSidebarOpen(false)} style={{ border: "none", background: "none", cursor: "pointer", padding: 4, borderRadius: 8, color: "#9ca3af" }}>
             <X size={18} />
